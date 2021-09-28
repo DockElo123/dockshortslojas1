@@ -1,0 +1,217 @@
+*,
+*::after,
+*::before {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root{
+    --cor-azul-clarinho:#11168D;
+    --cor-verde-claro: #126753;
+    --cor-azul-claro: #1F3B9F;
+    --cor-azul-escuro: #14118D;
+    --cor-cinza-escuro: #20224E;
+    --cor-cinza-claro: #6C6FAD;
+    --fonte: 'Roboto', arial, sans-serif;
+}
+
+html{
+    font-size:62.5%; /*10px */
+
+}
+.logo-alt {
+    font-size: 90;
+}
+
+body{
+    font-family:var(--fonte);
+    color:var (--cor-fonte);
+    font-size: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width:1140px;
+    width: 85px;;
+    margin:0 auto;
+}
+
+header{
+    background: rgba(17, 22, 141, 0.66);
+    height: 300px;
+}
+
+header.logo-menu{
+    display:flex;
+    width: 100%;
+    height: 100x;
+    justify-content: space-between;
+    align-items:center;
+}
+
+header .logo-alt {
+    display: none;
+}
+
+header .menu-principal{
+    width: 50%;
+}
+header .menu-principal ul{
+    display: flex;
+    list-style: none;
+    font-size:1.8rem;
+    text-transform: uppercase;
+}
+
+nav.menu-principal li:hover a {
+    color:darkred;
+    text-decoration: underline;
+}
+
+header .menu-principal a{
+    color: var(--cor-azul-claro);
+    text-decoration: none;
+    font-weight: bold;
+    padding: .5rem;
+}
+
+header .menu-principal a.atual
+{
+    color:var(--cor-azul-escuro);
+    border-bottom: .7rem solid var(--cor-azul-escuro);
+}
+
+
+/*Se o meu tamanho de tela for no máximo de 970px nós executamos o css dentro das chaves*/
+
+@media (max-width:672px) {
+    .logo-menu {
+        width: 1rem;
+    }
+}
+ .ofertas-conteudo {
+     flex-wrap: wrap;
+ }
+
+ .ofertas-categoria {
+     width: 45%;
+ }
+
+
+
+header .banner-dockshorts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:150px 1fr;
+    grid-template-areas: "imagem titulo"
+                         "imagem texto";
+}
+
+header .banner-titulo{
+    grid-area: titulo;
+    font-size: 7rem;
+    text-decoration: underline;
+    color:#126753;
+    text-align:center;
+    text-shadow: 0px 4px 4px rgba(0, 22, 141, 0.66);
+    align-self: end;
+}
+
+header .banner-titulo > img{
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+header .banner-imagem{
+    grid-area: imagem;
+}
+
+header .banner-texto{
+    grid-area: texto;
+    text-align: center;
+}
+
+header .banner-texto > {
+    font-size: 2.2rem;
+    line-height: 120%;
+    margin: 2rem 1rem;
+}
+
+.btn{
+    padding: 2rem 3rem;
+    color:#20224E;
+    text-decoration: none;
+    border-radius:2rem;
+    box-shadow:0 4px 1px var(--cor-azul-clarinho);
+    display: inline-block;
+}
+.btn:hover{
+    background-color:var (--cor-azul-claro);
+    box-shadow:0 4px 1px #11168D
+}
+.banner-btn{
+    font-size:3rem;
+    text-transform: u;
+}
+
+.Ofertas{
+    background-color:  var(--cor-azul-escuro);
+    border-top: 15px solid var(--cor-cinza-claro)
+
+}
+.Ofertas{
+    background-color: var(--cor-verde-claro);
+    color:var(--cor-azul-clarinho);
+    padding: 1rem 5rem;
+    text-transform: uppercase;
+}
+
+.empresa {
+    background-color:var(--cor-azul-escuro);
+    border-top: 1.5rem solid var(--cor-cinza-claro);
+
+}
+
+.empresa-conteudo{
+    width: 33.3%;
+    display: flex;
+    border-left: 1px solid #d80b0b;
+    border-right: 1px solid #126753
+}
+
+.section-titulo {
+    background-color: #11168D;
+}
+
+.localização {
+    background-color: #126753;
+}
+
+.funcionamento {
+    background-color: #126753;
+}
+
+footer {
+    background-color: var(--cor-azul-claro);
+    border-top: 1.5rem solid var(--cor-verde-claro);
+}
+
+.empresa p{
+    background-color: var(--cor-azul-clarinho);
+}
+
+.btnbanner-btn {
+    color: rgb(red, green, blue);
+}
+
+.index.html {
+    color:var(--cor-azul-clarinho);
+    display: inline-block;
+    padding: 1rem 5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
